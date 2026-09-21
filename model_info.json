@@ -1,0 +1,127 @@
+{
+  "model_card": {
+    "data": "QC Synthetic Data: 2,200 synthetic casting-defect images, 22 classes",
+    "binary": {
+      "backbone": "MobileNetV2",
+      "note": "Trained for 1 epoch. The 'no defect' class was 178 low-texture corner crops taken from the defect images themselves, not real defect-free jewellery."
+    },
+    "multi": {
+      "backbone": "ResNet50V2",
+      "accuracy": 0.2955,
+      "macro_f1": 0.2878,
+      "test_images": 440
+    }
+  },
+  "classes": [
+    {
+      "raw": "1-Gas Porosity",
+      "name": "Gas Porosity",
+      "description": "Small, round, smooth-walled voids left by gas trapped in the metal as it solidified."
+    },
+    {
+      "raw": "2-Shrinkage Porosity",
+      "name": "Shrinkage Porosity",
+      "description": "Irregular, rough-edged voids where the metal contracted while freezing, typically in thicker sections."
+    },
+    {
+      "raw": "3-Pinholes",
+      "name": "Pinholes",
+      "description": "Very small, pin-sized holes at or just under the surface, often from escaping gas."
+    },
+    {
+      "raw": "Blisters",
+      "name": "Blisters",
+      "description": "Raised bubbles or bumps on the surface where gas was trapped beneath it."
+    },
+    {
+      "raw": "Carbon or Black Spots",
+      "name": "Carbon / Black Spots",
+      "description": "Dark spots or patches, commonly from carbon residue left by incomplete burnout of wax or investment."
+    },
+    {
+      "raw": "Cold Shut",
+      "name": "Cold Shut",
+      "description": "A seam or line where two metal streams met but did not fully fuse."
+    },
+    {
+      "raw": "Cracks",
+      "name": "Cracks",
+      "description": "Linear fractures in the metal, often from stress or too-rapid cooling."
+    },
+    {
+      "raw": "Dimensional Shrinkage",
+      "name": "Dimensional Shrinkage",
+      "description": "The piece comes out smaller or out of shape relative to the intended dimensions because of contraction."
+    },
+    {
+      "raw": "Firescale   Oxidation",
+      "name": "Firescale / Oxidation",
+      "description": "Grey, purple or dark discolouration of the surface caused by oxidation during heating."
+    },
+    {
+      "raw": "Flash Fins",
+      "name": "Flash / Fins",
+      "description": "Thin sheets or ridges of excess metal along seams, where metal leaked into cracks in the mould."
+    },
+    {
+      "raw": "Heavy Porosity",
+      "name": "Heavy Porosity",
+      "description": "Widespread, dense porosity across a large part of the surface or section."
+    },
+    {
+      "raw": "Hot Tears",
+      "name": "Hot Tears",
+      "description": "Ragged cracks that form while the metal is still cooling and weak, usually at stress points."
+    },
+    {
+      "raw": "Investment Inclusions   ",
+      "name": "Investment Inclusions",
+      "description": "Particles of mould (investment) material embedded in or stuck to the metal surface."
+    },
+    {
+      "raw": "Misrun   Short Fill",
+      "name": "Misrun / Short Fill",
+      "description": "Incomplete casting where the metal failed to fill part of the mould cavity."
+    },
+    {
+      "raw": "Nodule",
+      "name": "Nodule",
+      "description": "Small rounded lumps or bumps standing proud of the surface."
+    },
+    {
+      "raw": "Orange peel   Spongy",
+      "name": "Orange Peel / Spongy",
+      "description": "A dimpled, orange-peel or sponge-like rough surface texture."
+    },
+    {
+      "raw": "Pits",
+      "name": "Pits",
+      "description": "Small depressions or craters in the surface."
+    },
+    {
+      "raw": "Sink Marks",
+      "name": "Sink Marks",
+      "description": "Shallow surface depressions caused by localised shrinkage over thicker sections."
+    },
+    {
+      "raw": "Warp   Distortion",
+      "name": "Warp / Distortion",
+      "description": "The piece is bent, twisted or otherwise deformed from its intended shape."
+    },
+    {
+      "raw": "Water   Streak marks",
+      "name": "Water Streak Marks",
+      "description": "Streaky lines or marks left where water, steam or quenching contacted the surface."
+    },
+    {
+      "raw": "metal beads",
+      "name": "Metal Beads",
+      "description": "Small spherical droplets of metal stuck to or near the piece."
+    },
+    {
+      "raw": "slag inclusions",
+      "name": "Slag Inclusions",
+      "description": "Non-metallic slag or dross particles trapped in the metal."
+    }
+  ]
+}
